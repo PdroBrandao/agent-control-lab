@@ -1,0 +1,25 @@
+{
+  "name": "agent-control-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reference implementation of an order operations agent: an LLM interprets intent, and a deterministic harness controls execution.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "demo": "tsx src/index.ts",
+    "smoke": "tsx src/smoke.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}
